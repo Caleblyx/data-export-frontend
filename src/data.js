@@ -35,7 +35,7 @@ function createDataSection(){
 
             setTimeout(function() {
                 dataFrame.style.opacity = "100%";
-            }, 1000);
+            }, 2000);
         }
         const navBar = document.createElement("div");
         navBar.classList.add("nav-bar");

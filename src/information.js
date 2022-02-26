@@ -11,7 +11,7 @@ function createInformationSection(){
     const information = document.createElement("div");
     information.classList.add("information");
     const informationTitle = document.createElement('div');
-    informationTitle.textContent = "What's inside";
+    informationTitle.textContent = "What's included";
     informationTitle.classList.add("information-title");
     information.appendChild(informationTitle);
     const informationCells = document.createElement('div');
