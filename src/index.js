@@ -6,8 +6,17 @@ import { createMainHeader } from './mainheader';
 import { navBarCreator } from './navbar';
 import { createDataSection} from './data';
 import { createDownloadButton } from './download';
+import exportIcon from './images/export.png';
 
 const API = "https://8m2nl02f08.execute-api.ap-southeast-1.amazonaws.com/api/download"
+
+const head = document.querySelector("head");
+const icon = document.createElement("link");
+icon.rel = "icon";
+icon.type = "image/x-icon";
+icon.href = exportIcon;
+head.appendChild(icon);
+
 
 
 const contentDiv = document.querySelector("div");
