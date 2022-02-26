@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+
+#main-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    padding: 20px 30px;
+    box-shadow: 0 0 50px rgb(20, 19, 19);
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: solid 1px black;
+
+}
+
+.right-header{
+    display: flex;
+    align-items: center;
+}
+.download-button{
+    border: solid black 1px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-button:hover{
+    background-color: gray;
+    border: solid gray 1px;
+}
+
+.download-button:active{
+    background-color: rgb(50, 50, 50);
+    border: solid rgb(50, 50, 50) 1px;
+}
+
+.download-img {
+    width: 30px;
+}
+.nav-bar{
+    display:flex;
+    gap: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: 2px solid black;
+    margin-right: 30px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.nav-button{
+    text-decoration: none;
+}
+
+.nav-button:visited{
+    color: inherit;
+}
+
+.nav-button-selected,
+.nav-button:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+.about {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    padding: 200px;
+    gap: 100px;
+    align-items: center;
+}
+
+.about-text{
+    width: 25%;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    justify-content: center;
+}
+.about-title{
+    font-size: 70px;
+    font-weight: 1000;
+}
+
+.content-body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trends-image{
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.information{
+    font-family: 'Roboto', sans-serif;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.data-title,
+.information-title{
+    font-size: 60px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.information-cells{
+    padding: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+.cell-image{
+    height: 150px;
+    width: 150px;
+}
+
+.information-cell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+}
+
+.cell-title{
+    font-size: 32px;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.data-frame{
+    width: 1200px;
+    height: 800px;
+    border: 0px;
+    overflow-x: scroll;
+    margin: 30px;
+    transition: opacity 0.5s linear;
+}
+
+.data{
+    padding: 150px 0px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
