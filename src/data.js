@@ -6,11 +6,21 @@ import "./style.css";
 function createDataSection(){
     const GRADUATES = "https://data.gov.sg/dataset/intake-enrolment-and-graduates-by-institutions/resource/2264a6ed-51f5-45d6-accb-1a980e32e632/view/af173233-827f-4b3f-a190-4de3cb58f714";
     const INTAKES = "https://data.gov.sg/dataset/intake-enrolment-and-graduates-by-institutions/resource/be05b06d-1042-45de-a35b-5a5e04e7c704/view/9128a6bc-94e5-4806-8772-c3a94c1d0d90";
+    
+    
     const dataSection = document.createElement("div");
     dataSection.classList.add("data");
+    
     const dataTitle = document.createElement("div");
     dataTitle.classList.add("data-title")
-    dataTitle.textContent = "Graduate Data";
+    dataTitle.textContent = "Data";
+    dataSection.append(dataTitle);
+    
+    const dataDescription = document.createElement("div");
+    dataDescription.classList.add("data-description");
+    dataDescription.textContent = "The tables below contain data imported by the application to create the downloadable excel file. Use the navigation bar to alternate between different sets of data.";
+    dataSection.append(dataDescription);
+
     const dataFrame = createDataFrame(GRADUATES);
     dataSection.appendChild(dataFrame);
 
